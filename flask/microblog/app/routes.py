@@ -16,7 +16,7 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }
     ]
-    return render_template('index.html', context=dict(title='Home', user=user, posts=posts))
+    return render_template('index.html', title='Home', user=user, posts=posts)
 
 @app.route('/login')
 def login():
